@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background: url('images/home3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Place it behind the content */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.top-bar .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: hsl(0, 0%, 25%);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.cart-container img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+header .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+header .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header .hamburger {
+        display: flex;
+    }
+
+    header .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    header .menu a {
+        padding: 10px;
+    }
+}
+main {
+    padding: 70px;
+}
+.aboutus-section {
+    background-color: #E2DFD0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.aboutus-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.aboutus-section section {
+    margin-bottom: 20px;
+}
+.aboutus-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.aboutus-section p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.aboutus-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #333;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .hamburger {
+        display: flex;
+    }
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-media span {
+    margin-right: 10px;
+}
+
+footer .social-media a {
+    margin: 0 5px;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .payment-methods {
+    display: flex;
+    align-items: center;
+}
+
+footer .payment-methods span {
+    margin-right: 10px;
+}
+
+footer .payment-methods img {
+    margin: 0 5px;
+    width: 36px;
+    height: 24px;
+}
+

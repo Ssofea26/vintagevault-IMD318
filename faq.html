@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Thrift Shop</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo-container">
+            <img src="images/logo5.png" alt="Logo" width="55%">
+        </div>
+        <div class="nav-buttons">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search Icon">
+                </button>
+            </div>
+            <div class="cart-container">
+                <a href="cart.html">
+                    <img src="images/cart.jpeg" alt="Cart Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="women.html">Women Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#women-tshirt">T-Shirts</a>
+                        <a href="#women-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="men.html">Men Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#men-tshirt">T-Shirts</a>
+                        <a href="#men-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="footwear.html">Footwear</a>
+                    <div class="dropdown-content">
+                        <a href="footwear.html">Men</a>
+                        <a href="footwearwomen.html">Women</a>
+                        </div>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="sales.html">sales</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="customerservice.html">Customer Service</a>
+                        <a href="feedback.html">feedback</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="faq-section">
+        <h1 style="color: #373A40;">Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <h2>What is Thrift Shop?</h2>
+            <p>Thrift Shop is an online store that offers a wide variety of preloved items at affordable prices. Our inventory includes clothing, accessories, footwear, and more for both men and women.</p>
+        </div>
+        <div class="faq-item">
+            <h2>How do I place an order?</h2>
+            <p>To place an order, simply browse our collections, add items to your cart, and proceed to checkout. You will need to create an account or log in if you already have one. Follow the steps to complete your purchase.</p>
+        </div>
+        <div class="faq-item">
+            <h2>What payment methods do you accept?</h2>
+            <p>We accept various payment methods including Visa, MasterCard, American Express, and PayPal. All transactions are securely processed.</p>
+        </div>
+        <div class="faq-item">
+            <h2>Do you offer international shipping?</h2>
+            <p>Currently, we only ship within Malaysia. We hope to expand our shipping options in the future to include international destinations.</p>
+        </div>
+        <div class="faq-item">
+            <h2>What is your return policy?</h2>
+            <p>If you are not satisfied with your purchase, you can return the item within 14 days of receiving it. The item must be in its original condition and packaging. Please refer to our <a href="policy.html">Shipping, Return & Refund Policy</a> for more details.</p>
+        </div>
+        <div class="faq-item">
+            <h2>How can I contact customer service?</h2>
+            <p>If you need assistance, you can contact our customer service team via email at support@thriftshop.com or through our <a href="customerservice.html">Customer Service</a> page. We are here to help!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; VintageVault 2024</p>
+            <ul class="footer-links">
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="policy.html">Shipping, Return & Refund Policy</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="social-media">
+                <span>Follow us:</span>
+                <a href="https://www.instagram.com/vintagevault__"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="https://wa.me/+60184090464"><img src="images/whaatsapp.png" alt="Whatsapp"></a>
+            </div>
+            <div class="payment-methods">
+                <span>We accept:</span>
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var menu = document.getElementById('menu');
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

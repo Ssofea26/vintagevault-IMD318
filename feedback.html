@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo-container">
+            <img src="images/logo5.png" alt="Logo" width="55%">
+        </div>
+        <div class="nav-buttons">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search Icon">
+                </button>
+            </div>
+            <div class="cart-container">
+                <a href="cart.html">
+                    <img src="images/cart.jpeg" alt="Cart Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee">
+        <marquee>
+            Thrift 1 Get 1 FREE | Free Shipping: Orders above RM120
+        </marquee>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="women.html">Women Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#women-tshirt">T-Shirts</a>
+                        <a href="#women-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="men.html">Men Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#men-tshirt">T-Shirts</a>
+                        <a href="#men-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="footwear.html">Footwear</a>
+                    <div class="dropdown-content">
+                        <a href="footwear.html">Men</a>
+                        <a href="footwearwomen.html">Women</a>
+                        </div>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="sales.html">Sales</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="customerservice.html">Customer Service</a>
+                        <a href="feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+    <center><div class="container">
+        <h1>Vintage Vault Feedback Form</h1>
+        <form onsubmit="return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="button" onclick="sendFeedback()">Submit Feedback</button>
+        </form>
+    </div></center>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; VintageVault 2024</p>
+            <ul class="footer-links">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="policy.html">Shipping, Return & Refund Policy</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="social-media">
+                <span>Follow us:</span>
+                <a href="https://www.instagram.com/vintagevault__"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="https://wa.me/+60184090464"><img src="images/whaatsapp.png" alt="Whatsapp"></a>
+            </div>
+            <div class="payment-methods">
+                <span>We accept:</span>
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function sendFeedback() {
+            var name = document.getElementById('name').value;
+            var message = document.getElementById('message').value;
+
+            var emailAddress = 'nrhvrrs23@gmail.com'; // Replace with your email address
+            var subject = 'Feedback from ' + name;
+            var body = 'Name: ' + name + '\n\nMessage:\n' + message;
+
+            // Construct the mailto link
+            var mailtoLink = 'mailto:' + encodeURIComponent(emailAddress) +
+                             '?subject=' + encodeURIComponent(subject) +
+                             '&body=' + encodeURIComponent(body);
+
+            // Open the default email client with the mailto link
+            window.location.href = mailtoLink;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Shop - Men's Collection</title>
+    <link rel="stylesheet" href="men.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo-container">
+            <img src="images/logo5.png" alt="Logo" width="55%">
+        </div>
+        <div class="nav-buttons">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search Icon">
+                </button>
+            </div>
+            <div class="cart-container">
+                <a href="cart.html">
+                    <img src="images/cart.jpeg" alt="Cart Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee">
+        <marquee>
+            Thrift 1 Get 1 FREE | Free Shipping: Orders above RM120
+        </marquee>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="women.html">Women Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showShirts()">Shirts</a>
+                        <a href="#" onclick="showJeans()">Jeans</a> 
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="men.html">Men Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showShirts()">Shirts</a>
+                        <a href="#" onclick="showJeans()">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="footwear.html">Footwear</a>
+                    <div class="dropdown-content">
+                        <a href="footwear.html">Men</a>
+                        <a href="footwearwomen.html">Women</a>
+                        </div>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="sales.html">Sales</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="customerservice.html">Customer Service</a>
+                        <a href="feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <h1>Welcome to our exclusive Men's Wear Collection</h1>
+            <p>Whether you’re looking for tailored suits, casual wear, or statement accessories, our collection is crafted with quality and attention to detail.</p>
+            <p>Explore our range and elevate your wardrobe with pieces that are as versatile as you are. Step into a world of refined elegance and impeccable fashion.</p>
+            <button onclick="location.href='#men-collection'">Shop Now!</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="collection-section" id="men-collection">
+            <h1>Men Collection</h1>
+            <div class="products">
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m1.jpg" class="slide active">
+                        <img src="images/m2.jpg" class="slide">
+                    </div>
+                    <h2>Nike Hoodie</h2>
+                    <p>Size L</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM180</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Nike Hoodie', 'RM180.', 'images/m1.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Nike Hoodie')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m3.jpg" class="slide active">
+                        <img src="images/m4.jpg" class="slide">
+                    </div>
+                    <h2>Nirvana T-shirt</h2>
+                    <p>Size L</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM170</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Nirvana T-shirt', 'RM170.', 'images/m3.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Nirvana T-shirt')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m5.jpg" class="slide active">
+                        <img src="images/m6.jpg" class="slide">
+                    </div>
+                    <h2>Tom Hilfiger</h2>
+                    <p>Size XL</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM190</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Tom Hilfiger', 'RM190.', 'images/m5.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Tom Hilfiger')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m7.jpg" class="slide active">
+                        <img src="images/m8.jpg" class="slide">
+                    </div>
+                    <h2>Carhartt T-shirt</h2>
+                    <p>Size M</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM180</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Carhartt T-shirt', 'RM180.', 'images/m7.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Carhartt T-shirt')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m9.jpg" class="slide active">
+                        <img src="images/m10.jpg" class="slide">
+                    </div>
+                    <h2>The North Face</h2>
+                    <p>Size L</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM185</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('The North Face', 'RM185.', 'images/m9.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('The North Face')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m11.jpg" class="slide active">
+                        <img src="images/m12.jpg" class="slide">
+                    </div>
+                    <h2>Burberry Hoodie</h2>
+                    <p>Size L</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM230</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Burberry Hoodie', 'RM230.', 'images/m11.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Burberry Hoodie')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m13.jpg" class="slide active">
+                        <img src="images/m14.png" class="slide">
+                    </div>
+                    <h2>Calvin Klein Denim</h2>
+                    <p>Size L</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM180</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Calvin Klein Denim', 'RM180.', 'images/m13.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Calvin Klein Denim')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m15.png" class="slide active">
+                        <img src="images/m16.png" class="slide">
+                    </div>
+                    <h2>Stussy Hoodie</h2>
+                    <p>Size XL</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM180</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Stussy Hoodie', 'RM180.', 'images/m15.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Stussy Hoodie')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m17.png" class="slide active">
+                        <img src="images/m18.png" class="slide">
+                    </div>
+                    <h2>Champion Hoodie</h2>
+                    <p>Size XL</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM180</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Champion Hoodie', 'RM180.', 'images/m17.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Champion Hoodie')">Buy Now</button>
+                </div>
+        
+                <div class="product shirt">
+                    <div class="slider">
+                        <img src="images/m19.png" class="slide active">
+                        <img src="images/m20.png" class="slide">
+                    </div>
+                    <h2>Hugo Boss Shirt</h2>
+                    <p>Size M</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM130</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Hugo Boss Shirt', 'RM130.', 'images/m19.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Hugo Boss Shirt')">Buy Now</button>
+                </div>
+        
+                <div class="product jeans">
+                    <div class="slider">
+                        <img src="images/n1.png" class="slide active">
+                        <img src="images/n2.png" class="slide">
+                    </div>
+                    <h2>Levi's Denim</h2>
+                    <p>Size L33</p>
+                    <p>Condition: 9/10</p>
+                    <p>RM150</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Levi\'s Denim', 'RM150.', 'images/n1.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Levi\'s Denim')">Buy Now</button>
+                </div>
+        
+                <div class="product jeans">
+                    <div class="slider">
+                        <img src="images/n3.png" class="slide active">
+                        <img src="images/n4.png" class="slide">
+                    </div>
+                    <h2>Guess Men Denim</h2>
+                    <p>Size L34</p>
+                    <p>Condition: 9/10</p>
+                    <p>RM150</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Guess Men Denim', 'RM150.', 'images/n3.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Guess Men Denim')">Buy Now</button>
+                </div>
+        
+                <div class="product jeans">
+                    <div class="slider">
+                        <img src="images/n5.png" class="slide active">
+                        <img src="images/n6.png" class="slide">
+                    </div>
+                    <h2>Calvin Klein Denim</h2>
+                    <p>Size L34</p>
+                    <p>Condition: 9/10</p>
+                    <p>RM150</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Calvin Klein Denim', 'RM150.', 'images/n5.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Calvin Klein Denim')">Buy Now</button>
+                </div>
+        
+                <div class="product jeans">
+                    <div class="slider">
+                        <img src="images/n7.png" class="slide active">
+                        <img src="images/n8.png" class="slide">
+                    </div>
+                    <h2>Calvin Klein Denim</h2>
+                    <p>Size L33</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM155</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Calvin Klein Denim', 'RM155.', 'images/n7.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Calvin Klein Denim')">Buy Now</button>
+                </div>
+        
+                <div class="product jeans">
+                    <div class="slider">
+                        <img src="images/n9.png" class="slide active">
+                        <img src="images/n10.png" class="slide">
+                    </div>
+                    <h2>Calvin Klein Denim</h2>
+                    <p>Size L34</p>
+                    <p>Condition: 10/10</p>
+                    <p>RM160</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Calvin Klein Denim', 'RM160.', 'images/n9.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Calvin Klein Denim')">Buy Now</button>
+                </div>
+            </div>
+            <div class="popular-brands">
+                <h1>SHOP POPULAR BRANDS</h1>
+                <div class="brand-logos">
+                    <img src="images/Nike-Logo.png" alt="Nike">
+                    <img src="images/carhartt.png" alt="Carhartt">
+                    <img src="images/converse.png" alt="Converse">
+                    <img src="images/levis.jpg" alt="levis">
+                    <img src="images/patagonia.jpg" alt="Patagonia">
+                    <img src="images/reebok.png" alt="Reebok">
+                    <img src="images/tnf.png" alt="North Face">
+        </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; VintageVault 2024</p>
+            <ul class="footer-links">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="policy.html">Shipping, Return & Refund Policy</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="social-media">
+                <span>Follow us:</span>
+                <a href="https://www.instagram.com/vintagevault__"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="https://wa.me/+60184090464"><img src="images/whaatsapp.png" alt="Whatsapp"></a>
+            </div>
+            <div class="payment-methods">
+                <span>We accept:</span>
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var menu = document.getElementById('menu');
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+
+        function addToCart(name, description, image) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({name, description, image});
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Added to cart: ' + name);
+        }
+
+        // JavaScript for slider functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var sliders = document.querySelectorAll('.slider');
+
+            sliders.forEach(function(slider) {
+                var slides = slider.querySelectorAll('.slide');
+                var slideIndex = 0;
+
+                function showSlide(n) {
+                    slides.forEach(function(slide) {
+                        slide.classList.remove('active');
+                    });
+                    slides[n].classList.add('active');
+                }
+
+                function nextSlide() {
+                    slideIndex++;
+                    if (slideIndex >= slides.length) {
+                        slideIndex = 0;
+                    }
+                    showSlide(slideIndex);
+                }
+
+                setInterval(nextSlide, 3000); // Adjust slide interval as needed
+            });
+        });
+
+        function placeOrder(productName) {
+    const phoneNumber = '60184090464'; // Correctly formatted phone number without spaces or special characters
+    const message = `Hello, I would like to place an order for ${productName}.`;
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+}
+
+        function showShirts() {
+            var products = document.querySelectorAll('.product');
+            products.forEach(function(product) {
+                if (product.classList.contains('shirt')) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        function showJeans() {
+            var products = document.querySelectorAll('.product');
+            products.forEach(function(product) {
+                if (product.classList.contains('jeans')) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

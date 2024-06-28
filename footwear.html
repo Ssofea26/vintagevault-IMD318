@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Shop</title>
+    <link rel="stylesheet" href="footwear.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo-container">
+            <img src="images/logo5.png" alt="Logo" width="55%">
+        </div>
+        <div class="nav-buttons">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search Icon">
+                </button>
+            </div>
+            <div class="cart-container">
+                <a href="cart.html">
+                    <img src="images/cart.jpeg" alt="Cart Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="marquee">
+        <marquee>
+            Thrift 1 Get 1 FREE | Free Shipping: Orders above RM120
+        </marquee>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="women.html">Women Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#women-tshirt">T-Shirts</a>
+                        <a href="#women-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="men.html">Men Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#men-tshirt">T-Shirts</a>
+                        <a href="#men-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                <a href="footwear.html">Footwear</a>
+                <div class="dropdown-content">
+                    <a href="footwear.html">Men</a>
+                    <a href="footwearwomen.html">Women</a>
+                    </div>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="sales.html">Sales</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="customerservice.html">Customer Service</a>
+                    <a href="feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <h1>Welcome to Our Thrift Shop</h1>
+            <h2>Welcome to our footwear collection
+                Discover a curated range of preloved shoes, from vintage classics to contemporary styles, all selected for quality and comfort.</h2>
+            <h3>Featured Items</h3>
+            <h2>Check out some of our featured items:</h2>
+            <button onclick="location.href='#sales-collection'">Shop Now!</button>
+        </div>
+    </div>
+    <main>
+        <div class="collection-section sales-promotion-section" id="sales-collection">
+            <h1>MEN FOOTWEAR</h1>
+            <br><br>
+            <div class="products">
+                <div class="product">
+                    <div class="slider">
+                        <img src="images/1.png" class="slide active">
+                        <img src="images/2.png" class="slide">
+                    </div>
+                    <h2>O'Sullivan Executive Wing Tip Loafers</h2>
+                    <p>Size 9.5</p>
+                    <p>Brown</p>
+                    <p>Condition: 9.5/10</p>
+                    <div class="price">
+                        <p>RM269</p>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Sullivan Executive Wing Tip Loafers', 'RM269.', 'images/1.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Sullivan Executive Wing Tip Loafers')">Buy Now</button>
+                </div>
+                <div class="product">
+                    <div class="slider">
+                        <img src="images/4.png" class="slide active">
+                        <img src="images/5.png" class="slide">
+                    </div>
+                    <h2>Maison Margiela Sneakers</h2>
+                    <p>Replica Leather & Suede</p>
+                    <p>Size 8</p>
+                    <p>Off-white</p>
+                    <p>Condition: 9.9/10</p>                    
+                    <div class="price">
+                        <p>RM240</p>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Maison Margiela Sneakers', 'RM240.', 'images/5.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Maison Margiela Sneakers')">Buy Now</button>
+                </div>
+                <div class="product">
+                    <div class="slider">
+                        <img src="images/7.png" class="slide active">
+                        <img src="images/8.png" class="slide">
+                    </div>
+                    <h2>Adidas</h2>
+                    <p>Original Suede</p>
+                    <p>Size 8</p>
+                    <p>White</p>
+                    <p>Condition: 10/10</p> 
+                    <div class="price">
+                      <p>RM240</p> 
+                      </div> 
+                    <button class="add-to-cart-btn" onclick="addToCart('Adidas', 'RM240.', 'images/7.png')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Adidas')">Buy Now</button>
+                </div>
+                <div class="product">
+                  <div class="slider">
+                      <img src="images/10.png" class="slide active">
+                      <img src="images/11.png" class="slide">
+                  </div>
+                  <h2>New Balance</h2>
+                  <p>2002R</p>
+                  <p>Size 9</p>
+                  <p>Phantom Grey</p>
+                  <p>Condition: 9.8/10</p> 
+                  <div class="price">
+                    <p>RM200</p> 
+                    </div> 
+                  <button class="add-to-cart-btn" onclick="addToCart('New Balance', 'RM200.', 'images/10.png')">Add to Cart</button>
+                  <button class="buy-now-btn" onclick="placeOrder('New Balance')">Buy Now</button>
+              </div>
+              <div class="product">
+                <div class="slider">
+                    <img src="images/13.png" class="slide active">
+                    <img src="images/14.png" class="slide">
+                </div>
+                <h2>Vintage Saint Laurent</h2>
+                <p>Beaded black</p>
+                <p>Size 8.5</p>
+                <p>Black</p>
+                <p>Condition: 9.9/10</p> 
+                <div class="price">
+                  <p>RM300</p> 
+                  </div> 
+                <button class="add-to-cart-btn" onclick="addToCart('Vintage Saint Laurent', 'RM300.', 'images/13.png')">Add to Cart</button>
+                <button class="buy-now-btn" onclick="placeOrder('Vintage Saint Laurent')">Buy Now</button>
+            </div>
+            <div class="product">
+              <div class="slider">
+                  <img src="images/16.png" class="slide active">
+                  <img src="images/17.png" class="slide">
+              </div>
+              <h2>Kenneth Cole Ankle Boots</h2>
+              <p>Genuine Leather Lace Up</p>
+              <p>Size 9</p>
+              <p>Brown</p>
+              <p>Condition: 10/10</p> 
+              <div class="price">
+                <p>RM250</p> 
+                </div> 
+              <button class="add-to-cart-btn" onclick="addToCart('Kenneth Cole Ankle Boots', 'RM250.', 'images/16.png')">Add to Cart</button>
+              <button class="buy-now-btn" onclick="placeOrder('Kenneth Cole Ankle Boots')">Buy Now</button>
+          </div>
+            </div>
+        </div>
+        <div class="popular-brands">
+            <h1>SHOP POPULAR BRANDS</h1>
+            <div class="brand-logos">
+                <img src="images/Nike-Logo.png" alt="Nike">
+                <img src="images/carhartt.png" alt="Carhartt">
+                <img src="images/converse.png" alt="Converse">
+                <img src="images/levis.jpg" alt="levis">
+                <img src="images/patagonia.jpg" alt="Patagonia">
+                <img src="images/reebok.png" alt="Reebok">
+                <img src="images/tnf.png" alt="North Face">
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; VintageVault 2024</p>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="policy.html">Shipping, Return & Refund Policy</a></li>
+                    <li><a href="terms.html">Terms and Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+                <div class="social-media">
+                    <span>Follow us:</span>
+                    <a href="https://www.instagram.com/vintagevault__"><img src="images/insta.png" alt="Instagram"></a>
+                    <a href="https://wa.me/+60184090464"><img src="images/whaatsapp.png" alt="Whatsapp"></a>
+                </div>
+                <div class="payment-methods">
+                    <span>We accept:</span>
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+                </div>
+            </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu');
+                if (menu.style.display === 'flex') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'flex';
+                }
+            }
+    
+            window.addEventListener('resize', function() {
+                var menu = document.getElementById('menu');
+                if (window.innerWidth >= 768) {
+                    menu.style.display = 'flex';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+            
+            function toggleMenu() {
+                var menu = document.getElementById('menu');
+                if (menu.style.display === 'flex') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'flex';
+                }
+            }
+    
+            window.addEventListener('resize', function() {
+                var menu = document.getElementById('menu');
+                if (window.innerWidth >= 768) {
+                    menu.style.display = 'flex';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+    
+            function addToCart(name, description, image) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push({name, description, image});
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert('Added to cart: ' + name);
+            }
+    
+            // JavaScript for slider functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                var sliders = document.querySelectorAll('.slider');
+    
+                sliders.forEach(function(slider) {
+                    var slides = slider.querySelectorAll('.slide');
+                    var slideIndex = 0;
+    
+                    function showSlide(n) {
+                        slides.forEach(function(slide) {
+                            slide.classList.remove('active');
+                        });
+                        slides[n].classList.add('active');
+                    }
+    
+                    function nextSlide() {
+                        slideIndex++;
+                        if (slideIndex >= slides.length) {
+                            slideIndex = 0;
+                        }
+                        showSlide(slideIndex);
+                    }
+    
+                    setInterval(nextSlide, 3000); // Adjust slide interval as needed
+                });
+            });
+
+            function placeOrder(productName) {
+    const phoneNumber = '60184090464'; // Correctly formatted phone number without spaces or special characters
+    const message = `Hello, I would like to place an order for ${productName}.`;
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+}
+        </script>
+    </body>
+    </html>

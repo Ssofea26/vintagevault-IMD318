@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Shop</title>
+    <link rel="stylesheet" href="accessories.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo-container">
+            <img src="images/logo5.png" alt="Logo" width="55%">
+        </div>
+        <div class="nav-buttons">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search Icon">
+                </button>
+            </div>
+            <div class="cart-container">
+                <a href="cart.html">
+                    <img src="images/cart.jpeg" alt="Cart Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="women.html">Women Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#women-tshirt">T-Shirts</a>
+                        <a href="#women-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="men.html">Men Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#men-tshirt">T-Shirts</a>
+                        <a href="#men-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                <a href="footwear.html">Footwear</a>
+                <div class="dropdown-content">
+                    <a href="footwear.html">Men</a>
+                    <a href="footwearwomen.html">Women</a>
+                    </div>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="sales.html">Sales</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="customerservice.html">Customer Service</a>
+                    <a href="feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <h1>Welcome to Our Thrift Shop</h1>
+            <p>Welcome to our preloved accessories collection 
+                Explore unique, stylish pieces to complete your look. Here, you'll find a curated selection of stylish and unique accessories, each with its own story and charm.</p>
+            <h3>Featured Items</h3>
+            <h2>Check out some of our featured items:</h2>
+            <button onclick="location.href='#accessories'">Shop Now!</button>
+        </div>
+    </div>
+    <main>
+        <div class="collection-section sales-promotion-section" id="accessories">
+            <h1>ACCESSORIES</h1>
+            <br><br>
+            <div class="products">
+                <div class="product">
+                    <div class="slider">
+                        <img src="images/1.jpg" class="slide active">
+                        <img src="images/2.jpg" class="slide">
+                        <img src="images/3.jpg" class="slide">
+                    </div>
+                    <h2>Chanel Oversize Black Quilted Glasses</h2>
+                    <p>Vintage & Stylish</p>
+                    <p>Black</p>
+                    <p>Condition: 10/10</p>
+                    <div class="price">
+                        <p>RM100</p>
+
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Chanel Oversize Black Quilted Glasses', 'RM100.', 'images/1.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Chanel Oversize Black Quilted Glasses')">Buy Now</button>
+                </div>
+                <div class="product">
+                    <div class="slider">
+                        <img src="images/4.jpg" class="slide active">
+                        <img src="images/5.jpg" class="slide">
+                    </div>
+                    <h2>Hermès Black Blue Maxi Twilly</h2>
+                    <p>Pattern Design</p>
+                    <div class="price">
+                    <p>Condition: 9/10</p>
+                        <p>RM70</p>
+                        <br><br><br>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Hermès Black Blue Maxi Twilly', 'RM70.', 'images/4.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Hermès Black Blue Maxi Twilly')">Buy Now</button>
+                </div>
+                <div class="product">
+                    <div class="slider">
+                        <img src="images/6.jpg" class="slide active">
+                    </div>
+                    <h2>Diesel Men's Stacked Line Bracelet</h2>
+                    <div class="price">
+                        <p> <ul>
+                            <li>Type:Line bracelet</li>
+                            <li>Material:Stainless steel</li>
+                            <li>Clasp:Lobster clasp closure</li>
+                            <p>Condition: 9/10</p>
+                        </ul>
+                    </p>
+                        <p>RM100</p>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Diesel Mens Stacked Line Bracelet', 'RM100.', 'images/6.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Diesel Mens Stacked Line Bracelet')">Buy Now</button>
+                </div>
+                <div class="product">
+                    <div class="slider">
+                        <img src="images/7.jpg" class="slide active">
+                    </div>
+                    <h2>Johnston & Murphy Belt</h2>
+                    <p>Product Features</p>
+                    <p> <ul>
+                        <li>Material: Genuine leather</li>
+                        <li>Details: Stitched edges and a zinc alloy buckle</li>
+                        <p>Condition: 9/10</p>
+                    </ul>
+                </p>
+                    <div class="price">
+                        <p>RM95</p>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Johnston & Murphy Belt', 'RM95.', 'images/7.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Johnston & Murphy Belt')">Buy Now</button>
+                </div>
+                    <div class="product">
+                    <div class="slider">
+                        <img src="images/8.jpg" class="slide active">
+                        <img src="images/9.jpg" class="slide">
+                    </div>
+                    <h2>Ralph's Baseball Cap Newport </h2>
+                    <p>Rare Limited Edition</p>
+                    <p>Navy Blue</p>
+                    <div class="price">
+                       <p>RM90</p>
+                       <p>Condition: 8/10</p>
+                    
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('Ralphs Baseball Cap Newport', 'RM90.', 'images/8.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('Ralphs Baseball Cap Newport')">Buy Now</button>
+                </div>
+                <div class="product">
+                    <div class="slider">
+                        <img src="images/10.jpg" class="slide active">
+                        <img src="images/11.jpg" class="slide">
+                        <img src="images/12.jpg" class="slide">
+                    </div>
+                    <h2>VINTAGE BOUCHERON 18K GOLD WATCH</h2>
+                    <p> Excellent condition. A rectangular watch with the original Boucheron crocodile strap. Hand engraved Boucheron Paris with French gold hallmarks for 18K. </p>
+                    <div class="price">
+                        <p>RM1000</p>
+                        <p>Condition: 9/10</p>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart('VINTAGE BOUCHERON 18K GOLD WATCH', 'RM1000', 'images/10.jpg')">Add to Cart</button>
+                    <button class="buy-now-btn" onclick="placeOrder('VINTAGE BOUCHERON 18K GOLD WATCH')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="popular-brands">
+            <h1>SHOP POPULAR BRANDS</h1>
+            <div class="brand-logos">
+                <img src="images/Nike-Logo.png" alt="Nike">
+                <img src="images/carhartt.png" alt="Carhartt">
+                <img src="images/converse.png" alt="Converse">
+                <img src="images/levis.jpg" alt="levis">
+                <img src="images/patagonia.jpg" alt="Patagonia">
+                <img src="images/reebok.png" alt="Reebok">
+                <img src="images/tnf.png" alt="North Face">
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; VintageVault 2024</p>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="policy.html">Shipping, Return & Refund Policy</a></li>
+                    <li><a href="terms.html">Terms and Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+                <div class="social-media">
+                    <span>Follow us:</span>
+                    <a href="https://www.instagram.com/vintagevault__"><img src="images/insta.png" alt="Instagram"></a>
+                    <a href="https://wa.me/+60184090464"><img src="images/whaatsapp.png" alt="Whatsapp"></a>
+                </div>
+                <div class="payment-methods">
+                    <span>We accept:</span>
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+                </div>
+            </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('menu');
+                if (menu.style.display === 'flex') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'flex';
+                }
+            }
+    
+            window.addEventListener('resize', function() {
+                var menu = document.getElementById('menu');
+                if (window.innerWidth >= 768) {
+                    menu.style.display = 'flex';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+            
+            function toggleMenu() {
+                var menu = document.getElementById('menu');
+                if (menu.style.display === 'flex') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'flex';
+                }
+            }
+    
+            window.addEventListener('resize', function() {
+                var menu = document.getElementById('menu');
+                if (window.innerWidth >= 768) {
+                    menu.style.display = 'flex';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+    
+            function addToCart(name, description, image) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push({name, description, image});
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert('Added to cart: ' + name);
+            }
+    
+            // JavaScript for slider functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                var sliders = document.querySelectorAll('.slider');
+    
+                sliders.forEach(function(slider) {
+                    var slides = slider.querySelectorAll('.slide');
+                    var slideIndex = 0;
+    
+                    function showSlide(n) {
+                        slides.forEach(function(slide) {
+                            slide.classList.remove('active');
+                        });
+                        slides[n].classList.add('active');
+                    }
+    
+                    function nextSlide() {
+                        slideIndex++;
+                        if (slideIndex >= slides.length) {
+                            slideIndex = 0;
+                        }
+                        showSlide(slideIndex);
+                    }
+    
+                    setInterval(nextSlide, 3000); // Adjust slide interval as needed
+                });
+            });
+
+            function placeOrder(productName) {
+    const phoneNumber = '60184090464'; // Correctly formatted phone number without spaces or special characters
+    const message = `Hello, I would like to place an order for ${productName}.`;
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+}
+        </script>
+    </body>
+    </html>

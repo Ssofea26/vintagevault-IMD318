@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Shop</title>
+    <link rel="stylesheet" href="customerservice.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="logo-container">
+            <img src="images/logo5.png" alt="Logo" width="55%">
+        </div>
+        <div class="nav-buttons">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search Icon">
+                </button>
+            </div>
+            <div class="cart-container">
+                <a href="cart.html">
+                    <img src="images/cart.jpeg" alt="Cart Icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="women.html">Women Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#women-tshirt">T-Shirts</a>
+                        <a href="#women-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="men.html">Men Collection</a>
+                    <div class="dropdown-content">
+                        <a href="#men-tshirt">T-Shirts</a>
+                        <a href="#men-jeans">Jeans</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="footwear.html">Footwear</a>
+                    <div class="dropdown-content">
+                        <a href="footwear.html">Men</a>
+                        <a href="footwearwomen.html">Women</a>
+                        </div>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="sales.html">Sales</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="customerservice.html">Customer Service</a>
+                        <a href="feedback.html">Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="customerservice-section">
+                <h1>Customer Service at Vintage Vault</h1>
+                <section>
+                    <p>At Vintage Vault, we strive to provide exceptional customer service to ensure your shopping experience is seamless and enjoyable. Our dedicated team is here to assist you with any questions or concerns you may have.</p>
+                </section>
+                <h2>Contact Us</h2>
+                <section>
+                    <h3>Support Team</h3>
+                    <p>If you need help with an order, have questions about our products, or require assistance with any aspect of your shopping experience, please don't hesitate to reach out to our support team.</p>
+                    <p>Email: <a href="mailto:support@vintagevault.com">support@vintagevault.com</a><br>
+                       Phone: 03-5729169<br>
+                       Address: 172, Puncak Alam, Selangor
+                    </p>
+                </section>
+                <section>
+                    <h3>Frequently Asked Questions (FAQ)</h3>
+                    <p>For quick answers to common questions, please visit our <a href="faq.html">FAQ page</a>. Here you can find information on shipping, returns, sizing, and more.</p>
+                </section>
+                <section>
+                    <h3>Shipping, Return & Refund Policy</h3>
+                    <p>Your satisfaction is our priority. Review our <a href="policy.html">Shipping, Return & Refund Policy</a> to understand our procedures for order fulfillment, returns, and refunds.</p>
+                </section>
+                <section>
+                    <h3>Feedback</h3>
+                    <p>We value your feedback and are constantly looking to improve. If you have any suggestions or comments, please let us know through our <a href="feedback.html" onclick="toggleFeedbackModal()">Feedback Form</a>.</p>
+                </section>
+                <section>
+                    <h3>Stay Connected</h3>
+                    <p>Follow us on social media to stay updated with our latest collections, promotions, and news:</p>
+                    <p class="social-icons">
+                        <a href="https://www.instagram.com/vintagevault__">Instagram</a> |
+                    </p>
+                </section>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; VintageVault 2024</p>
+            <ul class="footer-links">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="policy.html">Shipping, Return & Refund Policy</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="social-media">
+                <span>Follow us:</span>
+                <a href="https://www.instagram.com/vintagevault__"><img src="images/insta.png" alt="Instagram"></a>
+                <a href="https://wa.me/+60184090464"><img src="images/whaatsapp.png" alt="Whatsapp"></a>
+            </div>
+            <div class="payment-methods">
+                <span>We accept:</span>
+                <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+                <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="MasterCard">
+            </div>
+        </div>
+        </div>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+
+        window.addEventListener('resize', function() {
+            var menu = document.getElementById('menu');
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

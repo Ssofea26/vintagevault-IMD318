@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+}
+
+.top-bar .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: hsl(0, 0%, 25%);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.cart-container img {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+/* Marquee */
+.marquee {
+    background-color: #666;
+    color: #ccc;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+header .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+header .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header .hamburger {
+        display: flex;
+    }
+
+    header .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    header .menu a {
+        padding: 10px;
+    }
+}
+
+.welcome-section {
+    background-image: url('images/home3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.welcome-content {
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.sales-promotion-section {
+    padding: 20px;
+    text-align: center;
+}
+main {
+    padding: 50px;
+    background-color: beige;
+    
+}
+/* Gallery grid layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Styling for the gallery container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img, .grid-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Popular Brands Section Styles */
+.popular-brands {
+    padding: 20px;
+    text-align: center;
+}
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand-logos img {
+    width: 100px;
+    transition: transform 0.5s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.grid-item img, .grid-item video {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item p {
+    padding: 10px;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item video {
+    display: block;
+} 
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-media span {
+    margin-right: 10px;
+}
+
+footer .social-media a {
+    margin: 0 5px;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .payment-methods {
+    display: flex;
+    align-items: center;
+}
+
+footer .payment-methods span {
+    margin-right: 10px;
+}
+
+footer .payment-methods img {
+    margin: 0 5px;
+    width: 36px;
+    height: 24px;
+}
+
+
